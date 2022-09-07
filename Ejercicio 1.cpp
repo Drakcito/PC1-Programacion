@@ -4,8 +4,8 @@ int main() {
 	long long code;
 	int merca_id, merca_ved, hora, minuto, segundo;
 
-	cout << "Ingrese el codigo de barras: ";//NN PP AA HH MM SS
-	cin >> code;//HH MM SS TTTTT E
+	cout << "Ingrese el codigo de barras: ";//HHMMSSTTTTTE
+	cin >> code;
 
 	hora = (code / 10000000000);
 	code = (code % 10000000000);
@@ -23,7 +23,7 @@ int main() {
 	cout << "Minuto de venta: " << minuto << endl;
 	cout << "Segundos de venta: " << segundo << endl;
 	cout << "Mercancia de identificacion: " << merca_id << endl;
-	cout << "Mercancía vendida (1 por E-commerce; 0, no venta por E-commerce): " << merca_ved << endl;
+	cout << "Mercancia vendida (1 por E-commerce; 0, no venta por E-commerce): " << merca_ved << endl;
 
 	return 0;
 }
